@@ -1,0 +1,238 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+
+a :hover{
+    color: rgb(90, 204, 253);
+}
+a :active{
+    color: pink;
+}
+a :visited{
+    color: rgb(61, 1, 126);
+}
+header{
+    background-color: #ffbd59;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 60px;
+    position: sticky;
+    top: 0;
+}
+nav{
+    /* background-color: aliceblue;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav{
+    margin-right: 10px;
+}
+.logo{
+    font-size: 20px;
+}
+body{
+    font-family: sans-serif;
+}
+.home-content{
+    background-color: #ffde59;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.home-text2{
+    margin-top: 150px;
+}
+.landing{
+    margin: 10px 0px 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+/*h1{
+    background-color: pink;
+}
+p{
+    background-color: wheat;
+}*/
+.typing-text{
+    font-size: 70px;
+    color: rgb(61, 1, 126);
+    border-right: 3px solid black;
+    overflow: hidden;
+    animation: type 3s infinite alternate linear;
+    /*animation: blink 1s infinite;*/
+}
+@keyframes type{
+    0%{
+        width: 0%;
+        border-right-color: black;
+    }
+    30%{
+        border-right-color: transparent;
+    }
+    50%{
+        width: 50%;
+        border-right-color: black;
+    }
+    70% {
+        width: 80%;
+        border-right-color: transparent;
+    }
+    90%,100%{
+        width: 100%;
+        border-right-color: black;
+    }
+}
+@keyframes blink {
+    from{
+        border-right-color: black;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+.about{
+    /*background-color: aquamarine;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 500px;
+    margin: 10px;
+}
+.about-text{
+    /*background-color: green;*/
+    grid-row: 1 / span 2;
+    grid-column: 1/span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.About{
+    margin-bottom: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+.aboutme{
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/*#about-text{
+    background-color: azure;
+}*/
+.about .about-img{
+    /*background-color: crimson;*/
+    grid-row: 1 / span4;
+    grid-column: 3 / span4;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.about-img img{
+    width: 100%;
+}
+.about .about-skill{
+    /*background-color: blue;*/
+    grid-row: 3 /span4;
+    grid-column: 1 / span 2;
+}
+.Skill{
+    margin-left: 5%;
+    font-size: 25px;
+}
+.skill{
+    /*background-color: antiquewhite;*/
+    display: flex;
+    margin-left: 10%;
+    justify-content: space-between;
+}
+.Education{
+    margin: 150px 0px 0px 0px;
+    text-align: center;
+    font-size: 25px;
+}
+.education{
+    display: flex;
+    flex-wrap: wrap;
+    /*background-color: cadetblue;*/
+    justify-content: space-around;
+    margin: 20px 0px 0px 0px;
+    .headd{
+        border-bottom: 3px solid black;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+}
+
+.education-item{
+    background-color: rgb(218, 216, 216);
+    padding: 10px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 10px;
+    width: 30%;
+    height: 150px;
+    text-align: center;
+    .school{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 19px;
+    }
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.high{
+    background-color: grey;
+    padding: 10px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+.uni{
+    background-color: grey;
+    padding: 10px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+hr{
+    margin: 200px 5% 0px 5%;
+    width: 90%;
+}
+footer{
+   /* background-color: #ffde59;*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon{
+    display: inline-flex;
+    font-size: 2rem;
+    /*background-color: aquamarine;*/
+}
+.item{
+    margin-right: 20px;
+    
+}
+.contactme{
+    display: flex;
+    font-size: 16px;
+    margin-top: 2px;
+   /* background-color: aqua;*/
+}
+.item2{
+    margin-right: 10px;
+}
